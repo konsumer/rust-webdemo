@@ -1,0 +1,13 @@
+[package]
+name = "rust-webdemo"
+version = "0.1.0"
+authors = ["David Konsumer <konsumer@jetboystudio.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+web-view = { version = "0.5.4" }
+
+[profile.release]
+opt-level = 'z'  # Optimize for size.
